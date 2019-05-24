@@ -43,8 +43,7 @@
           <div>
             <h2>Colours Available</h2>
             <!----v-bind:key="" ==== :key=""-->
-            <!---v-for="variation in variations"-->
-            
+            <!---v-for="variation in variations"; v-bind:class ====:class -->
             <span 
             class="color-box" 
             v-for="(variation, index) in variations"
@@ -62,7 +61,7 @@
             <!---<span class="color-box">Red</span>
             <span class="color-box">Blue</span>--->
           </div>
-          <!----v-on:click=""  ==  @click=""-->
+          <!----v-on:click=" "  ==  @click=" "-->
             <!----direct retrieve from VueJs-->
           <button :style="{backgroundColor: 'green'}" v-on:click="cart++">Add to Cart</button>
           <!---retrieve from app.js and then Vuejs-->
